@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1081127080060",
+    "project_id": "social-invest-9ab70",
+    "storage_bucket": "social-invest-9ab70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081127080060:android:41848bd490592f423bf9f9",
+        "android_client_info": {
+          "package_name": "com.example.social_invest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081127080060-5ianpti8ojhvudhe2eugsag3uo1n4nmh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiLE9V4tsfPmepB2CDjL5c31zzMiyqP7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1081127080060-5ianpti8ojhvudhe2eugsag3uo1n4nmh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
