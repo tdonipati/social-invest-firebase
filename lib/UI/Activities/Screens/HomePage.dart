@@ -1,18 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:social_invest/DataModels/fire_auth.dart';
 import 'package:social_invest/UI/Widgets/ProfileAvatar.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({Key? key}) : super(key: key);
+  final User user;
+
+  const HomePage({required this.user});
 
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
+  late User _currentUser;
+
+  @override
+  void initState() {
+    _currentUser = widget.user;
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
+    GlobalKey<ScaffoldState> _key = GlobalKey();
     Size screen = MediaQuery.of(context).size;
     return Scaffold(
+      key: _key,
       backgroundColor: Color(0xFFFFF5ED),
       body: CustomScrollView(
         slivers: [
@@ -50,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    ProfileAvatar(),
+                    //ProfileAvatar(),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,17 +78,17 @@ class _HomePageState extends State<HomePage> {
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontFamily: 'Poppins-Normal',
-                            fontSize: screen.height * 0.0375,
+                            fontSize: screen.height * 0.0525,
                           ),
                         ),
                         Text(
-                          'Tarun!',
+                          _currentUser.displayName!,
                           style: TextStyle(
                             //color: Color(0xFF00D0A3),
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontFamily: 'Poppins-Normal',
-                            fontSize: screen.height * 0.075,
+                            fontSize: screen.height * 0.095,
                             height: 0.9,
                           ),
                         ),
@@ -144,28 +159,78 @@ class _HomePageState extends State<HomePage> {
           )
         ],
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {},
-        label: Row(
-          children: [
-            Text(
-              'File Request',
-              style: TextStyle(
-                color: Colors.black,
-                fontFamily: 'Poppins-Normal',
-                fontWeight: FontWeight.bold,
-                fontSize: screen.height * 0.0225,
+      bottomNavigationBar: BottomAppBar(
+        elevation: 0,
+        color: Color(0xFFFFF5ED),
+        child: Container(
+          padding: EdgeInsets.symmetric(vertical: screen.height * 0.0125),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              FloatingActionButton(
+                onPressed: () => {_key.currentState!.openDrawer()},
+                child: Icon(
+                  Icons.notifications_outlined,
+                  color: Colors.black,
+                  size: screen.height * 0.0325,
+                ),
+                backgroundColor: Color(0xFFFFF5ED),
+                elevation: 0,
               ),
+              FloatingActionButton.extended(
+                onPressed: () {},
+                label: Row(
+                  children: [
+                    Text(
+                      'File Request',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontFamily: 'Poppins-Normal',
+                        fontWeight: FontWeight.bold,
+                        fontSize: screen.height * 0.02,
+                      ),
+                    ),
+                    Icon(
+                      Icons.add,
+                      color: Colors.black,
+                      size: screen.height * 0.0325,
+                    ),
+                  ],
+                ),
+                backgroundColor: Color(0xFFA8FAC9),
+                //elevation: 1,
+              ),
+              FloatingActionButton(
+                onPressed: () => {},
+                child: Icon(Icons.menu,
+                    color: Colors.black, size: screen.height * 0.0325),
+                backgroundColor: Color(0xFFFFF5ED),
+                elevation: 0,
+              )
+            ],
+          ),
+        ),
+      ),
+      drawer: Drawer(
+        child: new ListView(
+          children: <Widget>[
+            new Container(
+              child: new DrawerHeader(child: new CircleAvatar()),
+              color: Colors.tealAccent,
             ),
-            Icon(
-              Icons.add,
-              color: Colors.black,
-              size: screen.height * 0.0325,
-            ),
+            new Container(
+              color: Colors.blueAccent,
+              child: new Column(
+                children: new List.generate(4, (int index) {
+                  return new ListTile(
+                    leading: new Icon(Icons.info),
+                  );
+                }),
+              ),
+            )
           ],
         ),
-        backgroundColor: Color(0xFFA8FAC9),
       ),
     );
   }

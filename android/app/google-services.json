@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "1081127080060",
-    "project_id": "social-invest-9ab70",
-    "storage_bucket": "social-invest-9ab70.appspot.com"
+    "project_number": "985357040480",
+    "project_id": "social-invest-466ef",
+    "storage_bucket": "social-invest-466ef.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1081127080060:android:41848bd490592f423bf9f9",
+        "mobilesdk_app_id": "1:985357040480:android:0aba49d81b10e7c17e3c05",
         "android_client_info": {
-          "package_name": "com.example.social_invest"
+          "package_name": "com.social.invest"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1081127080060-5ianpti8ojhvudhe2eugsag3uo1n4nmh.apps.googleusercontent.com",
+          "client_id": "985357040480-js63j0epkal2qt1l4bnhtqmcqlrbb09o.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDiLE9V4tsfPmepB2CDjL5c31zzMiyqP7o"
+          "current_key": "AIzaSyB-NgviiaNg55NRQgcxcDR5XTB1--Iula4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1081127080060-5ianpti8ojhvudhe2eugsag3uo1n4nmh.apps.googleusercontent.com",
+              "client_id": "985357040480-js63j0epkal2qt1l4bnhtqmcqlrbb09o.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

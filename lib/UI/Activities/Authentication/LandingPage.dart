@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:social_invest/UI/Activities/Authentication/LoginPage.dart';
+import 'package:social_invest/UI/Activities/Authentication/RegisterPage.dart';
 
-class LandingPage extends StatefulWidget {
-  @override
-  _LandingPageState createState() => _LandingPageState();
-}
-
-class _LandingPageState extends State<LandingPage> {
+class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size screen = MediaQuery.of(context).size;
@@ -45,9 +44,17 @@ class _LandingPageState extends State<LandingPage> {
                     Container(
                       padding: EdgeInsets.symmetric(vertical: 10),
                       child: ElevatedButton(
-                        onPressed: () => {},
+                        onPressed: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  LoginPage(),
+                            ),
+                          );
+                        },
                         child: Container(
-                          padding: EdgeInsets.symmetric(vertical: 10, horizontal: screen.width * 0.325),
+                          padding: EdgeInsets.symmetric(
+                              vertical: 10, horizontal: screen.width * 0.325),
                           child: Text(
                             'login',
                             style: TextStyle(
@@ -72,9 +79,17 @@ class _LandingPageState extends State<LandingPage> {
                     Container(
                       padding: EdgeInsets.symmetric(vertical: 10),
                       child: ElevatedButton(
-                        onPressed: () => {},
+                        onPressed: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  RegisterPage(),
+                            ),
+                          );
+                        },
                         child: Container(
-                          padding: EdgeInsets.symmetric(vertical: 10, horizontal: screen.width * 0.3),
+                          padding: EdgeInsets.symmetric(
+                              vertical: 10, horizontal: screen.width * 0.3),
                           child: Text(
                             'sign up',
                             style: TextStyle(
