@@ -19,5 +19,7 @@ We train people in employable skills.
 1) Download code from github repo
 2) Open in IDE
 3) Make sure you have flutter installed and on Path
-4) Open an iPhone or Android simulator\ a) If you have Mac, run "open -a Simulator" to open iPhone simulator\ b) If you have Windows, follow this tutorial to install Android emulator: https://youtu.be/pj99_CarIA4
-6) Run "flutter run" command 
+5) If you have Mac, run "open -a Simulator" to open iPhone simulator
+6) If you have Windows, follow this tutorial to install Android emulator: https://youtu.be/pj99_CarIA4
+7) Open an iPhone or Android simulator. 
+8) Run "flutter run" command 
