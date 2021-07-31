@@ -2,16 +2,16 @@
 
 ## Problem
 
-Many families lost their main source of income due to COVID
+Many families lost their main source of income due to COVID.
 These families need a time cushion to restart themselves.
 Existing solutions only address part of the problem. 
 
 ## Solution
 
-Provide people with perfect platform to restart their lives
-Raise funds through donations to create time cushion
-Work with employers to identify employment opportunities
-Train people in employable skills
+We provide people with perfect platform to restart their lives.
+We raise funds through donations to create time cushion.
+We work with employers to identify employment opportunities.
+We train people in employable skills.
 
 
 ## Getting Started
