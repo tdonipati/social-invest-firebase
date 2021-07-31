@@ -5,22 +5,22 @@ import 'package:social_invest/DataModels/fire_auth.dart';
 import 'package:social_invest/UI/Widgets/ProfileAvatar.dart';
 
 class HomePage extends StatefulWidget {
-  final User user;
+  // final User user;
 
-  const HomePage({required this.user});
+  // const HomePage({required this.user});
 
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-  late User _currentUser;
+  //late User _currentUser;
 
-  @override
-  void initState() {
-    _currentUser = widget.user;
-    super.initState();
-  }
+  // @override
+  // void initState() {
+  //   _currentUser = widget.user;
+  //   super.initState();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -82,7 +82,8 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                         Text(
-                          _currentUser.displayName!,
+                          //_currentUser.displayName!
+                          'Tarun!',
                           style: TextStyle(
                             //color: Color(0xFF00D0A3),
                             color: Colors.white,

@@ -23,6 +23,23 @@ class _RegisterPageState extends State<RegisterPage> {
 
   bool _isProcessing = false;
 
+  Future<FirebaseApp> _initializeFirebase() async {
+    FirebaseApp firebaseApp = await Firebase.initializeApp();
+
+    User? user = FirebaseAuth.instance.currentUser;
+
+    if (user != null) {
+      // Navigator.of(context).pushReplacement(
+      //   // MaterialPageRoute(
+      //   //   builder: (context) => ProfilePage(
+      //   //     user: user,
+      //   //   ),
+      //   // ),
+      // );
+    }
+    return firebaseApp;
+  }
+
   @override
   Widget build(BuildContext context) {
     Size screen = MediaQuery.of(context).size;
@@ -156,7 +173,8 @@ class _RegisterPageState extends State<RegisterPage> {
                                           Navigator.of(context)
                                               .pushAndRemoveUntil(
                                             MaterialPageRoute(
-                                              builder: (context) => HomePage(user: user,),
+                                              builder: (context) => //HomePage(user: user,)
+                                              HomePage(),
                                             ),
                                             ModalRoute.withName('/'),
                                           );

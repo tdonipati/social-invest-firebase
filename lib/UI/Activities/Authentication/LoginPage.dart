@@ -165,7 +165,8 @@ class _LoginPageState extends State<LoginPage> {
                                                   .pushReplacement(
                                                 MaterialPageRoute(
                                                   builder: (context) =>
-                                                      HomePage(user: user),
+                                                      //HomePage(user: user),
+                                                      HomePage()
                                                 ),
                                               );
                                             }
