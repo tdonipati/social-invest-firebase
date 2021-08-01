@@ -39,3 +39,8 @@ post_install do |installer|
     flutter_additional_ios_build_settings(target)
   end
 end
+
+pod 'Firebase/Firestore'
+
+# Optionally, include the Swift extensions if you're using Swift.
+pod 'FirebaseFirestoreSwift'
