@@ -3,3 +3,5 @@ firebase_auth=/Users/tarundonipati/Developer/flutter/.pub-cache/hosted/pub.dartl
 firebase_auth_web=/Users/tarundonipati/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_web-3.0.0/
 firebase_core=/Users/tarundonipati/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-1.4.0/
 firebase_core_web=/Users/tarundonipati/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-1.1.0/
+stripe_android=/Users/tarundonipati/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/stripe_android-1.2.0/
+stripe_ios=/Users/tarundonipati/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/stripe_ios-1.2.0/

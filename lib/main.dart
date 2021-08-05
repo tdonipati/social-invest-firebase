@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'UI/Activities/Authentication/LandingPage.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'UI/Activities/Screens/HomePage.dart';
 
 void main() {
@@ -27,8 +28,8 @@ class MyApp extends StatelessWidget {
               child: new MaterialApp(home: new LandingPage()));
         }
         return new MediaQuery(
-              data: new MediaQueryData(),
-              child: new MaterialApp(home: new LandingPage()));
+            data: new MediaQueryData(),
+            child: new MaterialApp(home: new LandingPage()));
       },
     );
   }

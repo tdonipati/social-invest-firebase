@@ -92,6 +92,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_stripe",
+      "rootUri": "file:///Users/tarundonipati/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_stripe-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///Users/tarundonipati/Developer/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -100,6 +106,12 @@
     {
       "name": "flutter_web_plugins",
       "rootUri": "file:///Users/tarundonipati/Developer/flutter/packages/flutter_web_plugins",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "freezed_annotation",
+      "rootUri": "file:///Users/tarundonipati/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/freezed_annotation-0.14.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -118,6 +130,12 @@
     {
       "name": "js",
       "rootUri": "file:///Users/tarundonipati/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "json_annotation",
+      "rootUri": "file:///Users/tarundonipati/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-4.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -176,6 +194,24 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "stripe_android",
+      "rootUri": "file:///Users/tarundonipati/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/stripe_android-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "stripe_ios",
+      "rootUri": "file:///Users/tarundonipati/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/stripe_ios-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "stripe_platform_interface",
+      "rootUri": "file:///Users/tarundonipati/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/stripe_platform_interface-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "term_glyph",
       "rootUri": "file:///Users/tarundonipati/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/term_glyph-1.2.0",
       "packageUri": "lib/",
@@ -206,7 +242,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-08-01T15:28:36.927681Z",
+  "generated": "2021-08-01T16:02:02.260263Z",
   "generator": "pub",
   "generatorVersion": "2.13.4"
 }
